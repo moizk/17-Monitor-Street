@@ -2,51 +2,142 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+{% include bootstrap.css %}
+
+/*****************************************************************************/
+/*
+/* Kublai
+/*
+/*****************************************************************************/
 
 
+.btn-transparent-bk {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  font-weight: 500;
+  /* Visual */
+  background-color: rgba(0,0,0,0);
+  border-color: #fff;
+  color: #fff;
+  /* Misc */
+  -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+  &:hover {
+    border-color: #ff0;
+    color: #ff0;
+  }
+  &:active, &:focus {
+    border-color: #ff0;
+    color: #ff0;
+    outline: none !important;
+  }
+}
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
+/*****************************************************************************/
+/*
+/* Main
+/*
+/*****************************************************************************/
 
 
+nav.nklyn-monitor {
+  /* Positioning */
+  /* Box-model */
+  margin-bottom: 0;
+  /* Typography */
+  /* Visual */
+  -webkit-border-radius: 0px;
+     -moz-border-radius: 0px;
+          border-radius: 0px;
+  /* Misc */
+}
 
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
+div.nklyn-17-monitor-page {
+  /* Positioning */
+  /* Box-model */
+  /* Typography */
+  /* Visual */
+  /* Misc */
+  h2 {
+    /* Positioning */
+    /* Box-model */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* Typography */
+    font-family: 'Gotham SSm A', 'Gotham SSm B';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 34px;
+    /* Visual */
+    /* Misc */
+  }
+  div.nklyn-jumbotron {
+    /* Positioning */
+    /* Box-model */
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /* Typography */
+    /* Visual */
+    height: 800px;
+    background: url('../img/hero-new.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    /* Misc */
+    h1 {
+      /* Positioning */
+      /* Box-model */
+      padding-bottom: 0;
+      margin: 0;
+      /* Typography */
+      font-family: 'Knockout 50 A', 'Knockout 50 B';
+      font-weight: 400;
+      font-style: normal;
+      font-size: 100px;
+      line-height: 1;
+      /* Visual */
+      /* Misc */
     }
+    h2 {
+      /* Positioning */
+      /* Box-model */
+      max-width: 50%;
+      margin: 0 auto;
+      padding-bottom: 15px;
+      /* Typography */
+      font-family: 'Gotham SSm A', 'Gotham SSm B';
+      font-weight: 700;
+      font-style: normal;
+      font-size: 14px;
+      text-transform: uppercase;
+      /* Visual */
+      /* Misc */
+    }
+    h5 {
+      /* Positioning */
+      /* Box-model */
+      /* Typography */
+      font-size: 11px;
+      letter-spacing: 1px;
+      font-weight: 300;
+      text-transform: uppercase;
+      /* Visual */
+      /* Misc */
+    }
+  }
 }
 
 
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+
+
+
+
+
+
+

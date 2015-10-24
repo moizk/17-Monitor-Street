@@ -1,23 +1,40 @@
 ---
 layout: default
+title: 17 Monitor Street - Powered by Nooklyn
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="nklyn-17-monitor-page">
+  <div class="container-fluid">
+    <div class="row nklyn-jumbotron">
+        <h1>17</h1>
+        <h2>Monitor</h2>
+        <h5>Brooklyn, NY 11222</h5>
+        <br>
+        <a class="btn btn-transparent-bk btn-lg" href="#">Contact Us</a>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="text-center">Design</h2>
+    <hr>
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="img/1.jpg" class="img-responsive">
+        <br class="visible-xs">
+      </div>
+      <div class="col-sm-6">
+        <img src="img/2.jpg" class="img-responsive">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="img/3.jpg" class="img-responsive">
+        <br class="visible-xs">
+      </div>
+      <div class="col-sm-6">
+        <img src="img/4.jpg" class="img-responsive">
+        <br class="visible-xs">
+      </div>
+    </div>
+  </div>
 </div>
